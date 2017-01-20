@@ -2,8 +2,15 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+font-family: Dancing Script;
+src: url(Dancing Script v1.01/Dancing Script.ttf);
+}
+
 body{
   background-color: black;
+
 }
 /*Contenedor Principal*/
 .ContenedorPrincipal{
@@ -20,6 +27,9 @@ body{
   height: auto;
   display: flex;
   flex-wrap: wrap;
+}
+h1{
+  font-family: "Dancing Script";
 }
 header{
   background-color: green;
@@ -149,8 +159,7 @@ section{
   height: 220px;
   margin: 2% 5% 0 4%;
 }
-
-./*Paisajes.html*/
+/*Paisajes.html*/
 
 .caja1-paisajes{
   background-color: blue;
@@ -183,7 +192,7 @@ section{
   margin:2% 0% 2% 0%;
 }
 .imagen4-caja1-paisajes{
-  background-color: black;
+  background-color: pink;
   width: 200px;
   height: 200px;
   order: 4;
