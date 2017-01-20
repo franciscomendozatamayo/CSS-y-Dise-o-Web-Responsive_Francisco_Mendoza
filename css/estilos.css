@@ -83,9 +83,15 @@ section{
 }
 .contenedor-caja1{
   background-color: white;
-  width: 400px;
+  width: 50%;
   height: 200px;
   margin: 0 auto;
+}
+.caja1 .contenedor-caja1 img{
+  background-color: green;
+  width: 80%;
+  height: 160px;
+  margin: 4% 0 2% 10%;
 }
 
 .caja2{
