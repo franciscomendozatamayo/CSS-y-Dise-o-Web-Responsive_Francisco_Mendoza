@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-@font-face {
-font-family: Dancing Script;
-src: url(Dancing Script v1.01/Dancing Script.ttf);
-}
-
 body{
   background-color: black;
 
@@ -16,29 +11,46 @@ body{
 .ContenedorPrincipal{
   background-color: green;
   width: 70%;
-  height: 900px;
+  height: auto;
   margin: 0 auto;
   margin-top: 2%;
+  animation: miAnimacion 1.5s;
+}
+
+@-webkit-keyframes miAnimacion{
+  0%{
+    transform: translate(0,1500px);
+  }
+  20%{
+    transform: translate(0,1000px);
+  }
+  50%{
+    transform: translate(0,700px);
+  }
+
+  80%{
+    transform: rotate(60deg);
+  }
 }
 /*Cabecera*/
 .Cabecera{
-  background-color: gray;
+  background-color: #5b7989;
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
 }
-h1{
-  font-family: "Dancing Script";
-}
+
 header{
   background-color: green;
-  width: 370px;
+  width: 390px;
   height: auto;
   margin: 2% 13% 2% 5%;
+  color: white;
 }
 h1{
   font-size: 27px;
+
 }
 nav{
   background-color: orange;
@@ -91,15 +103,15 @@ section{
   background-color: blue;
   width: 100%;
   height: 400px;
-
+  display: flex;
+  justify-content:center;
 }
 
 .caja1-index .contenedor-caja1 .imagen1caja1{
   background-color: green;
-  width: 65%;
+  width: 700px;
   height: 300px;
-  margin: 6% 0 0 17%;
-
+  margin-top: 6%;
 }
 
 
@@ -110,20 +122,21 @@ section{
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .imagen1caja2{
   background-color: blue;
   width: 300px;
   height: 200px;
-  margin: 5% 5% 5% 13.5%;
+  margin: 3% 0 3% 0;
 }
 
 .imagen2caja2{
   background-color: gray;
   width: 300px;
   height: 200px;
-  margin: 5% 5% 5% 0;
+  margin: 3% 0 3% 0;
 }
 
 /*Caja 3*/
@@ -133,139 +146,94 @@ section{
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .caja1-caja3{
   background-color: white;
-  width: 150px;
+  width: 190px;
   height: 220px;
-  margin: 2% 5% 0 4%;
+  margin: 2% 0 2% 0;
 }
 .caja2-caja3{
   background-color: green;
-  width: 150px;
+  width: 190px;
   height: 220px;
-  margin: 2% 5% 0 4%;
+  margin: 2% 0 2% 0;
 }
 .caja3-caja3{
   background-color: gray;
-  width: 150px;
+  width: 190px;
   height: 220px;
-  margin: 2% 5% 0 4%;
+  margin: 2% 0 2% 0;
 }
 .caja4-caja3{
   background-color: blue;
-  width: 150px;
+  width: 190px;
   height: 220px;
-  margin: 2% 5% 0 4%;
+  margin: 2% 0 2% 0;
 }
-/*Paisajes.html*/
-
-.caja1-paisajes{
+///////////////////////////////////////////////
+/*Diseño Paisajes y Retratos*/
+.caja1{
   background-color: blue;
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
 
 }
-
-.imagen1-caja1-paisajes{
-  background-color: gray;
-  width: 200px;
-  height: 200px;
-  order: 1;
-  margin:2% 7% 2% 10%;
-}
-.imagen2-caja1-paisajes{
-  background-color: pink;
-  width: 200px;
-  height: 200px;
-  order: 2;
-  margin:2% 7% 2% 0%;
-}
-.imagen3-caja1-paisajes{
-  background-color: white;
-  width: 200px;
-  height: 200px;
-  order: 3;
-  margin:2% 0% 2% 0%;
-}
-.imagen4-caja1-paisajes{
-  background-color: pink;
-  width: 200px;
-  height: 200px;
-  order: 4;
-  margin:2% 7% 2% 10%;
-}
-.imagen5-caja1-paisajes{
-  background-color: red;
-  width: 200px;
-  height: 200px;
-  order: 5;
-  margin:2% 7% 2% 0%;
-}
-.imagen6-caja1-paisajes{
+.Contenedor1-caja1{
   background-color: yellow;
-  width: 200px;
-  height: 200px;
-  order: 6;
-  margin:2% 0% 2% 0%;
-}
-
-
-/*Retratos.html*/
-
-.caja1-retratos{
-  background-color: blue;
   width: 100%;
-  height: auto;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-around;
 }
-
-.imagen1-caja1-retratos{
-  background-color: gray;
-  width: 200px;
-  height: 200px;
-  order: 1;
-  margin:2% 7% 2% 10%;
-}
-.imagen2-caja1-retratos{
+.imagen1-caja1{
   background-color: pink;
   width: 200px;
   height: 200px;
-  order: 2;
-  margin:2% 7% 2% 0%;
+  margin: 2% 0 2% 0;
 }
-.imagen3-caja1-retratos{
-  background-color: white;
+.imagen2-caja1{
+  background-color: gray;
   width: 200px;
   height: 200px;
-  order: 3;
-  margin:2% 0% 2% 0%;
+  margin: 2% 0 2% 0;
 }
-.imagen4-caja1-retratos{
-  background-color: black;
+.imagen3-caja1{
+  background-color: blue;
   width: 200px;
   height: 200px;
-  order: 4;
-  margin:2% 7% 2% 10%;
+  margin: 2% 0 2% 0;
 }
-.imagen5-caja1-retratos{
+
+
+.Contenedor2-caja1{
+  background-color: gray;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.imagen4-caja1{
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+  margin: 2% 0 2% 0;
+}
+.imagen5-caja1{
   background-color: red;
   width: 200px;
   height: 200px;
-  order: 5;
-  margin:2% 7% 2% 0%;
+  margin: 2% 0 2% 0;
 }
-.imagen6-caja1-retratos{
-  background-color: yellow;
+.imagen6-caja1{
+  background-color: green;
   width: 200px;
   height: 200px;
-  order: 6;
-  margin:2% 0% 2% 0%;
+  margin: 2% 0 2% 0;
 }
-//////////////////////////////////////////////////////////
-/*Inicia Responsive Desing*/
+//////////////////////////////////
