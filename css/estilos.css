@@ -25,18 +25,12 @@ body{
 
 @-webkit-keyframes miAnimacion{
   0%{
-    transform: translate(0,1500px);
-  }
-  20%{
     transform: translate(0,1000px);
   }
-  50%{
-    transform: translate(0,700px);
+  100%{
+    transform: translate(0,0px);
   }
 
-  80%{
-    transform: rotate(100deg);
-  }
 }
 /*Cabecera*/
 .Cabecera{
@@ -113,14 +107,18 @@ section{
   background-color: blue;
   width: 100%;
   height: auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+
 
 .imagen1caja1{
   background-color: white;
-  width: 60%;
+  width: 70%;
   height: 300px;
-  margin: 3% 0 3% 20%;
+  margin: 2% 0 2% 0;
 }
 
 
@@ -198,7 +196,9 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
+
 .imagen1-caja1{
   background-color: pink;
   width: 200px;
@@ -249,18 +249,20 @@ section{
 
 
 /*Resonsive Desing*/
-@media (max-width:500px){
+@media (max-width:600px){
   .ContenedorPrincipal{
     background-color: green;
     width: 100%;
     height: auto;
     margin: 0%;
+
   }
+
 .imagen1caja1{
   background-color: white;
-  width: 90%;
+  width: 80%;
   height: 200px;
-  margin: 3% 5% 3% 0%;
+  margin: 2% 0 2% 0;
   }
 
 }
