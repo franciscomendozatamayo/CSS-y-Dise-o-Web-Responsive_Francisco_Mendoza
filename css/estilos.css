@@ -81,20 +81,20 @@ li{
   font-size: 22px;
 }
 .opcion1{
-  background-color: red;
+  background-color:#5b7989;
   width: 33.33%;
   height: 40px;
   text-align:center;
 
 }
 .opcion2{
-  background-color: green;
+  background-color: #5b7989;
   width: 33.33%;
   height: 40px;
   text-align:center;
 }
 .opcion3{
-  background-color: violet;
+  background-color: #5b7989;
   width: 33.33%;
   height: 40px;
   text-align:center;
@@ -124,7 +124,7 @@ section{
 
 .imagen1caja1{
   background-color: white;
-  width: 70%;
+  width: 60%;
   height: 300px;
   margin: 2% 0 2% 0;
 
@@ -133,7 +133,7 @@ section{
 
 /*Caja 2*/
 .caja2-index{
-  background-color: pink;
+  background-color: #D5C75F;
   width: 100%;
   height: auto;
   display: flex;
@@ -152,6 +152,7 @@ section{
 
 .imagen1caja2:hover{
   transform: rotate(30deg);
+  box-shadow: 2px #82c3a6;
 }
 
 
@@ -166,6 +167,7 @@ section{
 
 .imagen2caja2:hover{
   transform: translateX(30px);
+  box-shadow: 2px #82c3a6;
 }
 
 
@@ -178,17 +180,21 @@ section{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+  h3{
+    font-family:'DancingScript-Bold';
+    font-size: 14.5px;
+  }
 .caja1-caja3{
-  background-color: white;
+  background-color: #C6d5c5;
   width: 190px;
   height: 220px;
   margin: 2% 0 2% 0;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  overflow: hidden;
 }
 .caja2-caja3{
-  background-color: green;
+  background-color: #C6d5c5;
   width: 190px;
   height: 220px;
   margin: 2% 0 2% 0;
@@ -196,7 +202,7 @@ section{
   border-top-left-radius: 10px;
 }
 .caja3-caja3{
-  background-color: gray;
+  background-color:#C6d5c5;
   width: 190px;
   height: 220px;
   margin: 2% 0 2% 0;
@@ -204,7 +210,7 @@ section{
   border-top-left-radius: 10px;
 }
 .caja4-caja3{
-  background-color: blue;
+  background-color: #C6d5c5;
   width: 190px;
   height: 220px;
   margin: 2% 0 2% 0;
@@ -214,14 +220,14 @@ section{
 ///////////////////////////////////////////////
 /*Diseño Paisajes y Retratos*/
 .caja1{
-  background-color: blue;
+  background-color: #D5C75F;
   width: 100%;
   height: auto;
   display: flex;
 
 }
 .Contenedor1-caja1{
-  background-color: yellow;
+  background-color: #D5C75F;
   width: 100%;
   height: 50%;
   display: flex;
@@ -254,7 +260,7 @@ section{
 
 
 .Contenedor2-caja1{
-  background-color: gray;
+  background-color: #D5C75F;
   width: 100%;
   height: 50%;
   display: flex;
@@ -286,7 +292,7 @@ section{
 
 
 /*Resonsive Desing*/
-@media (max-width:500px){
+@media (max-width:400px){
   /*Cotenedor Principal*/
   .ContenedorPrincipal{
     background-color: green;
@@ -311,7 +317,7 @@ section{
   }
   /*Caja 2*/
   .caja2-index{
-    background-color: pink;
+    background-color: #d5c75f;
     width: 100%;
     height: auto;
     display: flex;
@@ -332,4 +338,52 @@ section{
     height: 200px;
 
   }
+
+
+
+
+  .imagen1-caja1{
+    background-color: pink;
+    width: 80%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 2% 0 2% 0;
+  }
+  .imagen2-caja1{
+    background-color: gray;
+    width: 80%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 2% 0 2% 0;
+  }
+  .imagen3-caja1{
+    background-color: blue;
+    width: 80%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 2% 0 2% 0;
+  }
+
+  .imagen4-caja1{
+    background-color: pink;
+    width: 80%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 2% 0 2% 0;
+  }
+  .imagen5-caja1{
+    background-color: red;
+    width: 80%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 2% 0 2% 0;
+  }
+  .imagen6-caja1{
+    background-color: green;
+    width: 80%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 2% 0 2% 0;
+  }
+
 }
