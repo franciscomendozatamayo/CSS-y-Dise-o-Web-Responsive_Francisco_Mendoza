@@ -224,12 +224,13 @@ h3{
   width: 100%;
   height: auto;
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .Contenedor1-caja1{
   background-color: #D5C75F;
   width: 100%;
-  height: 50%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -238,70 +239,258 @@ h3{
 
 .imagen1-caja1{
   background-color: pink;
-  width: 200px;
+  width: 20%;
   height: 200px;
   box-shadow: 2px #02010a;
   margin: 2% 0 2% 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 .imagen2-caja1{
   background-color: gray;
-  width: 200px;
+  width: 20%;
   height: 200px;
   box-shadow: 2px #02010a;
   margin: 2% 0 2% 0;
+  -webkit-filter: grayscale(100%);
 }
 .imagen3-caja1{
   background-color: blue;
-  width: 200px;
+  width: 20%;
   height: 200px;
   box-shadow: 2px #02010a;
   margin: 2% 0 2% 0;
+  -webkit-filter: sepia(90%);
 }
 
 
 .Contenedor2-caja1{
   background-color: #D5C75F;
   width: 100%;
-  height: 50%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .imagen4-caja1{
   background-color: pink;
-  width: 200px;
+  width: 20%;
   height: 200px;
   box-shadow: 2px #02010a;
   margin: 2% 0 2% 0;
+  -webkit-filter: grayscale(100%);
 }
 .imagen5-caja1{
   background-color: red;
-  width: 200px;
+  width: 20%;
   height: 200px;
   box-shadow: 2px #02010a;
   margin: 2% 0 2% 0;
 }
 .imagen6-caja1{
   background-color: green;
-  width: 200px;
+  width: 20%;
   height: 200px;
   box-shadow: 2px #02010a;
   margin: 2% 0 2% 0;
+  -webkit-filter: grayscale(100%);
 }
 
 
 
 /*Responsive Desing*/
-@media (max-width:400px){
+
+@media (max-width:500px){
 
   .ContenedorPrincipal{
     width: 100%;
     height: auto;
-    margin: 0;
     margin-top: 2%;
   }
-    
+  header{
+    background-color: #5b7989;
+    width: 100%;
+    height: auto;
+    margin: 2% 0% 2% 2%;
+    color: white;
+  }
+  nav{
+    background-color: orange;
+    width: 100%;
+    height: 40px;
+    margin: 4% 0 1% 0%;
+  }
 
+  .caja1-index{
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    background-color: #82c3a6;
+    display: flex;
+
+  }
+
+  .imagen1caja1{
+    background-color: white;
+    width: 60%;
+    height: 200px;
+    margin: 2% 0 2% 0;
+
+  }
+
+  .caja2-index{
+    background-color: #D5C75F;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .imagen1caja2{
+    background-color: blue;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 3% 0 3% 0;
+    transition: 1s;
+  }
+  .imagen2caja2{
+    background-color: gray;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 3% 0 3% 0;
+    transition: 1s;
+  }
+
+  .caja3-index{
+    background-color: #C6d5c5;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .caja1-caja3{
+    background-color: #C6d5c5;
+    width: 60%;
+    height: 220px;
+    margin: 0 auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+  }
+  .caja2-caja3{
+    background-color: #C6d5c5;
+    width: 60%;
+    height: 220px;
+    margin: 0 auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .caja3-caja3{
+    background-color:#C6d5c5;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .caja4-caja3{
+    background-color: #C6d5c5;
+    width: 60%;
+    height: 220px;
+    margin: 0 auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  /*Diseño Paisajes y Retratos*/
+  .caja1{
+    background-color: #D5C75F;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+  .Contenedor1-caja1{
+    background-color: #D5C75F;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .imagen1-caja1{
+    background-color: pink;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .imagen2-caja1{
+    background-color: gray;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .imagen3-caja1{
+    background-color: blue;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+
+  .Contenedor2-caja1{
+    background-color: #D5C75F;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .imagen4-caja1{
+    background-color: pink;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .imagen5-caja1{
+    background-color: red;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .imagen6-caja1{
+    background-color: green;
+    width: 60%;
+    height: 200px;
+    box-shadow: 2px #02010a;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
 
 
 }
